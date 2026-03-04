@@ -5,7 +5,7 @@
 2. Enable **Developer mode**.
 3. Click **Load unpacked**.
 4. Select this folder:
-   - `c:\Users\ouch\OneDrive\Desktop\monkytyipe`
+   - `c:\Users\youruser\location\location\monkeytype-bot`
 
 ## Use
 1. Open a typing website.
