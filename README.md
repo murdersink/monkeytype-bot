@@ -29,4 +29,3 @@
 - Hotkey toggle: `Ctrl+Shift+E` (can be disabled in the popup).
 - Auto restarter is currently tailored for Monkeytype-style result/restart buttons.
 - Cross-site correction is best-effort and depends on each site's DOM structure.
-- Includes dedicated detection adapters for TypeRacer and NitroType.
