@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Input Corrector</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="panel">
+    <h1>Typing Corrector</h1>
+    <p class="desc">Correct manually typed input, or enable the separate autotyper in settings.</p>
+
+    <div class="actions">
+      <button id="enable" class="primary" type="button">Enable</button>
+      <button id="disable" type="button">Disable</button>
+    </div>
+
+    <section class="profiles">
+      <h2>Per-Mode Profiles</h2>
+
+      <div class="profileRow">
+        <label for="profile-time">time</label>
+        <select id="profile-time">
+          <option value="strict">Strict</option>
+          <option value="letters">Letters Only</option>
+          <option value="off">Off</option>
+        </select>
+      </div>
+
+      <div class="profileRow">
+        <label for="profile-words">words</label>
+        <select id="profile-words">
+          <option value="strict">Strict</option>
+          <option value="letters">Letters Only</option>
+          <option value="off">Off</option>
+        </select>
+      </div>
+
+      <div class="profileRow">
+        <label for="profile-quote">quote</label>
+        <select id="profile-quote">
+          <option value="strict">Strict</option>
+          <option value="letters">Letters Only</option>
+          <option value="off">Off</option>
+        </select>
+      </div>
+
+      <div class="profileRow">
+        <label for="profile-zen">zen</label>
+        <select id="profile-zen">
+          <option value="strict">Strict</option>
+          <option value="letters">Letters Only</option>
+          <option value="off">Off</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="profiles autoRestart">
+      <h2>Auto Restarter</h2>
+
+      <label class="hotkeyRow">
+        <input id="autoRestartEnabled" type="checkbox" />
+        <span>Auto restart when result screen appears</span>
+      </label>
+
+      <div class="profileRow">
+        <label for="autoRestartMinDelay">Min Delay (ms)</label>
+        <input id="autoRestartMinDelay" type="number" min="100" max="60000" step="50" value="900" />
+      </div>
+
+      <div class="profileRow">
+        <label for="autoRestartMaxDelay">Max Delay (ms)</label>
+        <input id="autoRestartMaxDelay" type="number" min="100" max="60000" step="50" value="1800" />
+      </div>
+
+      <div class="profileRow">
+        <label for="autoRestartIdlePause">Idle Pause (sec)</label>
+        <input id="autoRestartIdlePause" type="number" min="1" max="600" step="1" value="20" />
+      </div>
+    </section>
+
+    <section class="profiles">
+      <h2>Autotyper</h2>
+      <label class="hotkeyRow">
+        <input id="autotyperEnabled" type="checkbox" />
+        <span>Enable Monkeytype autotyper</span>
+      </label>
+
+      <div class="profileRow">
+        <label for="autotyperAvgWpm">Avg Speed (WPM)</label>
+        <input id="autotyperAvgWpm" type="number" min="10" max="400" step="1" value="95" />
+      </div>
+
+      <div class="profileRow">
+        <label for="autotyperAccuracyPct">Accuracy (%)</label>
+        <input id="autotyperAccuracyPct" type="number" min="1" max="100" step="1" value="97" />
+      </div>
+    </section>
+
+    <label class="hotkeyRow">
+      <input id="hotkeyEnabled" type="checkbox" checked />
+      <span>Hotkey: Ctrl+Shift+E toggles corrector</span>
+    </label>
+
+    <p id="status">Status: disabled (time: strict) | Auto: off | Typing: off</p>
+    <p id="hint">Open a typing website in the active tab.</p>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

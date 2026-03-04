@@ -1,0 +1,126 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 280px;
+  background: #f5f7fb;
+  color: #1b2330;
+}
+
+.panel {
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.desc {
+  margin: 0;
+  font-size: 12px;
+  color: #3a4a63;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+button {
+  flex: 1;
+  border: 1px solid #ccd7ea;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 13px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+button.primary {
+  background: #1148df;
+  border-color: #1148df;
+  color: #ffffff;
+}
+
+.profiles {
+  margin-top: 2px;
+  border: 1px solid #d8e0ee;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 8px;
+  display: grid;
+  gap: 6px;
+}
+
+.profiles h2 {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #4a5973;
+}
+
+.profileRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.profileRow label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.profileRow select {
+  width: 112px;
+  border: 1px solid #cfd8e6;
+  border-radius: 7px;
+  padding: 5px 8px;
+  font-size: 12px;
+  background: #fff;
+}
+
+.profileRow input[type="number"] {
+  width: 112px;
+  border: 1px solid #cfd8e6;
+  border-radius: 7px;
+  padding: 5px 8px;
+  font-size: 12px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.autoRestart {
+  margin-top: 0;
+}
+
+.hotkeyRow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+}
+
+#hotkeyEnabled {
+  margin: 0;
+}
+
+#status {
+  margin: 8px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#hint {
+  margin: 0;
+  font-size: 11px;
+  color: #4e5b73;
+}
